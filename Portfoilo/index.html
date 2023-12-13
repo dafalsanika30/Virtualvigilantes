@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel=icon href="Pictures/portfolio1.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  
+
+</head>
+<body>
+    <div class="sidenav" >
+        <h1 class="menu">Sanika Dafal</h2>
+            <!-- <a href='#main' class="menu">Home</a> -->
+            <a href="#Portfolio" class="menu">PortFolio</a>
+            <a href="#About" class="menu">About Me</a>
+            <a href="#Contact" class="menu">Contact</a>
+    </div>
+
+    <div class="main" id="Portfolio">
+    <h1 ><img src="Pictures/portfolio.png" height="40" width="40">PortFolio</h1>
+        <p>&nbsp;Welcome to My World of Code!<br>
+            <span><a id="rbox" href="SanikaDafalResume.pdf" download="Resume">
+                <img src="Pictures/download.png"  width="20" height="20"> Download Resume
+              </a>
+            </span>
+        </p>
+        <br>
+        <h1 id="About"><img src="Pictures/aboutme.png" height="30" width="35"> About Me</h1>
+            &nbsp;Hello there! I'm Sanika Dafal, a passionate and results-driven software developer with a strong background in 
+            creating innovative and efficient solutions. My journey in the world of coding began with a fascination for turning 
+            ideas into reality through the power of technology. With a keen eye for detail and a commitment to excellence, 
+            I take pride in delivering high-quality software that makes a difference.
+        
+        <br>
+        <br>
+        <div class="aboutme">
+            <div class="heading">
+
+                <h3 onclick="openmesg1()"><img src="Pictures/skills.png" height="30" width="35"> Skills</h3> |
+                <h3 onclick="openmesg2()"><img src="Pictures/project.png" height="30" width="35">Projects</h3> |
+                <h3 onclick="openmesg3()"><img src="Pictures/education.png" height="30" width="35">Education</h3> 
+            
+            </div>
+                    
+            <div class="smesg" id="smesg">
+                <ul>
+                    <li>Programming Languages: C , Java, Python</li>
+                    <li>Web Technologies: HTML, CSS, JavaScript , PHP</li>
+                    <li>Database: PostgreSQL</li>
+                    <li>Operating Systems: Windows, Linux</li>
+                    <li>Problem Solving:DataStructure And Algorithm</li>
+                    <li>Ability to Work under Pressure</li>
+                    <li>Time Management</li>
+                    <li>Communication Skills</li>
+                    <li>Languages: English, Marathi, Hindi</li>
+                </ul>  
+            </div>
+
+            <div class="pmesg" id="pmesg">                    
+                <dl>
+                    <dt> Project Management System (PHP, JavaScript)</dt>
+                        <dd>Created a project management application to streamline project workflows. 
+                            Integrated user authentication, task assignment, and progress tracking features.
+                            PHP for database management and smooth communication between the frontend and backend 
+                            components.</dd>
+                </dl>
+
+            </div>
+
+            <div class="emesg" id="emesg">
+                <dl>
+                    <dt><img src="Pictures/university.png" height="20" width="20">Bachelor of Science in Computer Science</dt>
+                        <dd>&nbsp; Fergusson College , Pune | 2019 - Present (Expected Graduation 2024)</dd>
+                        <dd>&nbsp; CGPA : 8.55</dd>
+                    <dt><img src="Pictures/college.png" height="20" width="20">HSC(12th)<dt>
+                        <dd>&nbsp; Sir Parashurambhau College, Pune | 2020 - 2021</dd>
+                        <dd>&nbsp; Percentage : 75.00% </dd>
+                    <dt><img src="Pictures/school.png" height="20" width="20">SSC(10th)</dt>
+                        <dd>&nbsp; Maharashtriya Mandal, Pune | 2018 - 2019</dd>
+                        <dd>&nbsp; Percentage : 64.60% </dd>
+            
+                    </dl>  
+
+            </div>
+        </div>
+       
+        <br>
+        <h1 id="Contact"><img src="Pictures/contact.png" height="30" width="35"> Contact</h1>
+            <form>
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me via email  or connect with me on LinkedIn.
+                <br><a href="https://www.linkedin.com/in/sanikadafal/"><img src="Pictures/logo.png" height="100" width="100"></a>
+                <a href="mailto:dafalsanika30@gmail.com"><img src="Pictures/logo1.png" height="100" width="100"></a>
+                <a href="tel:+91-7709828156"><img src="Pictures/call.png" height="100" width="100"></a><br>
+                </p>
+            
+                First Name<input type="text" placeholder="Your name..">
+                Last Name<input type="text" placeholder="Your last name..">
+                City<select>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Nagpur</option>
+                    <option>Thane</option>
+                    <option>Nashik</option>
+                </select>
+                Subject<textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+    </div> 
+    <script src=script.js></script>
+</body>
+</html>
